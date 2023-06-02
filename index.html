@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Accordion tab 2</title>
+	<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<style>
+	*{
+		margin:0;
+		padding:0;
+		box-sizing:border-box;
+	}
+	.main{
+	width:80%;
+	height:200px;
+	margin: 50px auto;
+	border:2px solid;
+	}
+	.acc_sec{
+	display:flex;
+	background-color:gray;
+	}
+	.country_name .head1 h1{
+	padding:20px;
+	color:white;
+	}
+	.content1{
+	font-weight:700;
+	padding:10px;
+	display:none;
+	position:relative;
+	}
+
+	.content2{
+	font-weight:700;
+	padding:10px;
+	display:none;
+	left:150px;
+	position:relative;
+	}
+	.content3{
+	font-weight:700;
+	padding:10px;
+	display:none;
+	position:relative;
+	left:150px;
+	}
+	
+	.country_name:hover .content1 ,.country_name:hover .content2, .country_name:hover .content3{
+	display:block;
+	position:absolute;
+	<!-- width:300px; -->
+	<!-- height:90px; -->
+	}
+	.head1 h1:hover{
+	background-color:#cdc7c7;
+	}
+	
+</style>
+
+<body>
+
+<section class="main">
+
+	<div class="acc_sec">
+		<!-- FIRST COUNTRY NAME START -->
+		<div class="country_name">
+			<div class="head1">
+				<h1> London </h1>
+			</div>
+			<div class="content1">
+				<h1> London </h1>
+				<p> London is a captial of England</p>
+			</div>
+		</div>
+		<!-- FIRST COUNTRY NAME END -->
+		
+		<!-- SECOND COUNTRY NAME START -->
+		<div class="country_name">
+			<div class="head1">
+				<h1> Paries </h1>
+				
+			</div>
+			<div class="content2">
+				<h1> Paries </h1>
+				<p> Paries is a captial of France </p>
+			</div>
+		</div>
+		<!-- SECOND COUNTRY NAME END -->
+		
+		<!-- THIRD COUNTRY NAME START -->
+		<div class="country_name">
+			<div class="head1">
+				<h1> Tokoy </h1>
+				
+			</div>
+			<div class="content3">
+				<h1> Tokyo </h1>
+				<p> Tokoy is a captial of Japan </p>
+			</div>
+		</div>
+		<!-- THIRD COUNTRY NAME END -->
+	</div>
+</section>
+
+
+</body>
+</html>
